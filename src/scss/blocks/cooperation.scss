@@ -59,13 +59,7 @@
     height: 280px;
 
     box-sizing: border-box;
-
-    display: none;
-
-    &--active {
-        display: block;
-    }
-
+    
     background-repeat: no-repeat;
     background-position: right;
     background-size: 480px 300px;
@@ -93,6 +87,11 @@
         background-image: url("/img/bg-coop-5.jpg");
     }
 
+    display: none;
+
+    &--active {
+        display: block;
+    }
 }
 
 .cooperation__do-list {
