@@ -1,0 +1,107 @@
+.cooperation {
+    width: 1200px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.cooperation__title {
+    margin-bottom: 60px;
+
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.cooperation__name-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.cooperation__name-item {
+    box-sizing: border-box;
+
+    width: 240px;
+    height: 90px;
+
+    background: $gray-light;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    &--active {
+        background: $orange;
+        font-weight: 700;
+
+        color: $white;
+    }
+
+    cursor: pointer;
+}
+
+.cooperation__info-list {
+    list-style: none;
+
+    box-sizing: border-box;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.cooperation__info-item {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    height: 280px;
+
+    box-sizing: border-box;
+
+    display: none;
+
+    &--active {
+        display: block;
+    }
+
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 480px 300px;
+
+    &--phone {
+        background-repeat: no-repeat;
+        background-position: 823px 22px;
+        background-size: 267px 260px;
+        background-image: url("/img/iPhone-13-Pro-Front.jpg");
+    }
+
+    &--note {
+        background-image: url("/img/bg-coop-2.jpg");
+    }
+
+    &--timer {
+        background-image: url("/img/bg-coop-3.jpg");
+    }
+
+    &--employee {
+        background-image: url("/img/bg-coop-4.jpg");
+    }
+
+    &--contract {
+        background-image: url("/img/bg-coop-5.jpg");
+    }
+
+}
+
+.cooperation__do-list {
+    width: 684px;
+    list-style: disc;
+    padding: 0;
+    padding-left: 20px;
+
+    ::marker {
+        font-size: 0.7em;
+    }
+}

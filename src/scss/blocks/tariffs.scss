@@ -1,0 +1,196 @@
+.tariffs {
+    background-color: $bg-color;
+}
+
+.tariffs__wrapper {
+    width: 1200px;
+    height: 1386px;
+    margin: 0 auto;
+
+    padding-top: 120px;
+    padding-bottom: 116px;
+
+    box-sizing: border-box;
+}
+
+.tariffs__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    margin-bottom: 60px;
+}
+
+.tariffs__list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tariffs__item {
+    width: 360px;
+    height: 504px;
+
+    border: 1px solid rgba($color: $gray, $alpha: 0.3);
+
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.tariffs__img--mt {
+    margin-top: -1px;
+}
+
+.tariffs__item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.tariffs__main-text {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 312px;
+    height: 171px;
+
+    margin: 0 auto;
+
+    margin-top: 33px;
+
+    border-bottom: 1px solid rgba($color: $gray, $alpha: 0.2);
+
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+    &--3 {
+        padding-bottom: 39px;
+    }
+
+    &--6 {
+        padding-bottom: 35px;
+    }
+}
+
+.tariffs__info {
+    opacity: 0.5;
+}
+
+.tariffs__price-info {
+    width: 315px;
+    margin: 0 auto;
+
+    padding-top: 32px;
+    box-sizing: border-box;
+}
+
+.tariffs__price {
+    padding-left: 51px;
+    position: relative;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+
+    ::before {
+        position: absolute;
+        content: "";
+
+        height: 22px;
+        width: 21px;
+        left: 5px;
+        top: -1px;
+
+        opacity: 0.3;
+
+        background-repeat: no-repeat;
+        background-image: url("/img/₽.svg");
+    }
+}
+
+.tariffs__price-value {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+
+    color: $orange;
+}
+
+.tariffs__stock {
+    padding-left: 51px;
+    position: relative;
+    box-sizing: border-box;
+
+    ::before {
+        position: absolute;
+        content: "";
+
+        height: 40px;
+        width: 38px;
+        left: 0;
+        top: -1px;
+
+        opacity: 0.2;
+
+        background-repeat: no-repeat;
+        background-image: url("/img/Star\ 7\ \(Stroke\).svg");
+    }
+
+    &--op {
+        ::before {
+            opacity: 0.1;
+        }
+    }
+}
+
+.tariffs__old-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-decoration-line: line-through;
+
+    opacity: 0.5;
+}
+
+.tariffs__stock-span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tariffs__more {
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    line-height: 17px;
+
+    color: $orange;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+    font-weight: 600;
+    padding-right: 36px;
+
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url('/img/arrow-right.svg');
+}
+
+.tariffs__more:hover {
+    opacity: 0.6;
+}
+
+.tariffs__more:active {
+    opacity: 0.3;
+}

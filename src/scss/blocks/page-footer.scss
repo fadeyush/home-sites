@@ -1,0 +1,18 @@
+.page-footer {
+    background-color: $gray;
+}
+
+.page-footer__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    height: 532px;
+
+    box-sizing: border-box;
+
+    padding-top: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

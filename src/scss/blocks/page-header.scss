@@ -1,0 +1,74 @@
+.page-header {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 104px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page-header__logo {
+    width: 185px;
+    height: 48px;
+    margin-right: 177px;
+
+    cursor: pointer;
+}
+
+.page-header__title {
+    font-weight: 400;
+
+    color: $typography;
+
+    opacity: 0.7;
+    margin-right: 25px;
+}
+
+.page-header__phone {
+    font-weight: 600;
+    font-size: 16px;
+
+    color: $typography;
+
+    opacity: 0.7;
+
+    margin-right: 40px;
+    margin-left: 97px;
+}
+
+.page-header__button {
+    font-size: $button-title2;
+
+    color: $orange;
+
+    width: 222px;
+
+    padding-left: 28px;
+
+    position: relative;
+}
+
+.page-header__button:hover {
+    background: $button-hover-color;
+    color: $white;
+
+    border-color: $button-hover-color;
+
+    .page-header__button-ikon {
+        stroke: $white;
+    }
+}
+
+.page-header__button-ikon {
+    position: absolute;
+    left: 22px;
+    top: 14px;
+
+    height: 20px;
+    width: 20px;
+
+    stroke: $orange;
+    stroke-width: 4px;
+}

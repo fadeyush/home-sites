@@ -1,0 +1,88 @@
+.page-main {
+    background-repeat: no-repeat;
+    background-image: url("/img/main-bg.jpg");
+    background-size: cover;
+}
+
+.page-main__wrapper {
+    width: 1202px;
+    margin: 0 auto;
+}
+
+.main__title {
+    width: 780px;
+    height: 150px;
+
+    padding-top: 210px;
+    padding-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 75px;
+
+    color: $white;
+}
+
+.main__content {
+    width: 780px;
+    height: 44px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $white;
+
+    padding-bottom: 65px;
+}
+
+.main__button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 32px;
+
+    width: 735px;
+
+    padding-bottom: 250px;
+}
+
+.button__sales {
+    box-sizing: border-box;
+    width: 362px;
+
+    background: $orange;
+    backdrop-filter: blur(2.5px);
+    height: 62px;
+
+    font-size: 18px;
+    line-height: 22px;
+
+    color: $white;
+}
+
+.button__sales:hover{
+    background: $button-hover-color;
+    border-color: $button-hover-color;
+}
+
+.button__audit {
+    box-sizing: border-box;
+
+    width: 341px;
+    height: 62px;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid $white;
+    backdrop-filter: blur(2.5px);
+
+    font-size: 18px;
+    line-height: 22px;
+
+    color: $white;
+}
+
+.button__audit:hover{
+    color: $orange;
+    border: 1px solid $orange;
+}

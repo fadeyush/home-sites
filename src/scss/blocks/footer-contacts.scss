@@ -1,0 +1,93 @@
+.page-footer__contacts {
+    width: 193px;
+    margin-right: 167px;
+
+    font-weight: 400;
+}
+
+.footer-contacts__logo {
+    display: block;
+    margin-bottom: 57px;
+}
+
+.footer-contacts__region {
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.25);
+
+    .footer-contacts__town {
+        line-height: 14px;
+        color: rgba(255, 255, 255, 1);
+        border-bottom: 2px solid $white;
+
+        cursor: pointer;
+    }
+
+    margin-bottom: 21px;
+}
+
+.footer-contacts__town:hover {
+    opacity: 0.6;
+}
+
+.footer-contacts__town:active {
+    opacity: 0.3;
+}
+
+
+.footer-contacts__info {
+    font-size: 14px;
+    line-height: 24px;
+    color: $white;
+
+    margin-bottom: 12px;
+}
+
+.footer-contacts__taxes {
+    line-height: 24px;
+
+    color: $white;
+
+    opacity: 0.5;
+
+    margin-bottom: 28px;
+}
+
+.footer-contacts__social {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-contacts__social-item {
+    position: relative;
+
+    ::before {
+        position: absolute;
+        content: "";
+
+        width: 40px;
+        height: 40px;
+
+        top: 0;
+        left: 0;
+
+        background-repeat: no-repeat;
+    }
+
+    &--vk {
+        width: 40px;
+        ::before {
+            background-image: url("/img/cib_vk.png");
+        }
+    }
+
+    &--tg {
+        width: 40px;
+        ::before {
+            background-image: url("/img/fa_telegram.png");
+        }
+    }
+}
